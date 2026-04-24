@@ -1,0 +1,3 @@
+- [Obsidian vaults](obsidian_vaults.md) — dois vaults em OneDrive: memoria.claude (comercial) e dev.claude (técnico)
+- [Formato padrão de auditoria](feedback_audit_format.md) — template curto obrigatório pro /audit: notas, gravidade semafórica, mapa de skills
+- [Supabase memoria](reference_supabase_memoria.md) — tabela auditorias_projetos + memoria_permanente em qmlmbjaolmmwujfrxcpa, schema memoria
