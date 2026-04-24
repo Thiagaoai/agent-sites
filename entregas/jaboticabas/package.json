@@ -1,0 +1,13 @@
+{
+  "name": "jaboticabas",
+  "version": "1.0.0",
+  "description": "Landing page estática premium, substituta do jaboticabasrestaurante.com atual.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}

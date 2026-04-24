@@ -1,3 +1,34 @@
 {
-  "theme": "dark-blue"
+  "theme": "dark-blue",
+  "statusLine": {
+    "type": "command",
+    "command": "printf '\\033[38;2;100;200;255mAgente Sites\\033[0m'"
+  },
+  "permissions": {
+    "allow": []
+  },
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash .claude/hooks/post-edit.sh"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash .claude/hooks/check-reflexion.sh"
+          }
+        ]
+      }
+    ]
+  }
 }

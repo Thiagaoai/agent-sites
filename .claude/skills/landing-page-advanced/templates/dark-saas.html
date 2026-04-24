@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --color-bg: #0a0a0a;
+      --color-surface: rgba(20, 20, 25, 0.85);
+      --color-text: #ffffff;
+      --color-text-muted: rgba(255, 255, 255, 0.6);
+      --color-accent: #ff7832;
+      --color-accent-glow: rgba(255, 120, 50, 0.25);
+      --font-display: 'Syne', sans-serif;
+      --font-body: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    body {
+      background: var(--color-bg);
+      color: var(--color-text);
+      font-family: var(--font-body);
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    /* --- HERO with radial glow (Effect #1) --- */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      padding: 0 clamp(1.5rem, 5vw, 6rem);
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 30%; left: 50%;
+      transform: translate(-50%, -50%);
+      width: 800px; height: 600px;
+      background: radial-gradient(ellipse, var(--color-accent-glow) 0%, transparent 70%);
+      filter: blur(60px);
+      pointer-events: none;
+    }
+
+    .hero__content {
+      position: relative;
+      z-index: 5;
+      max-width: 700px;
+    }
+
+    .hero__tag {
+      display: inline-block;
+      padding: 6px 14px;
+      border-radius: 20px;
+      border: 1px solid rgba(255,255,255,0.1);
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--color-accent);
+      margin-bottom: 24px;
+    }
+
+    .hero__title {
+      font-family: var(--font-display);
+      font-weight: 800;
+      font-size: clamp(3rem, 8vw, 6.5rem);
+      line-height: 0.95;
+      letter-spacing: -0.03em;
+      text-transform: uppercase;
+      margin-bottom: 24px;
+    }
+
+    .hero__subtitle {
+      font-size: clamp(1rem, 1.5vw, 1.2rem);
+      line-height: 1.6;
+      color: var(--color-text-muted);
+      max-width: 500px;
+      margin-bottom: 40px;
+    }
+
+    .hero__actions {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    /* --- BUTTONS --- */
+    .btn-primary {
+      display: inline-flex;
+      padding: 14px 32px;
+      border-radius: 8px;
+      background: var(--color-accent);
+      color: #fff;
+      font-weight: 600;
+      font-size: 0.95rem;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(255, 120, 50, 0.3);
+    }
+
+    .btn-outline {
+      display: inline-flex;
+      padding: 14px 32px;
+      border-radius: 8px;
+      background: transparent;
+      color: #fff;
+      font-weight: 600;
+      font-size: 0.95rem;
+      text-decoration: none;
+      border: 1px solid rgba(255,255,255,0.2);
+      cursor: pointer;
+      transition: border-color 0.2s, background 0.2s;
+    }
+
+    .btn-outline:hover {
+      border-color: rgba(255,255,255,0.4);
+      background: rgba(255,255,255,0.05);
+    }
+
+    /* --- SECTIONS --- */
+    .section {
+      padding: clamp(4rem, 10vh, 8rem) clamp(1.5rem, 5vw, 6rem);
+    }
+
+    .section__title {
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      line-height: 1.05;
+      letter-spacing: -0.02em;
+      margin-bottom: 1.5rem;
+    }
+
+    /* --- DOT GRID (Effect #9) --- */
+    .dot-grid {
+      background-image: radial-gradient(rgba(255,255,255,0.06) 1px, transparent 1px);
+      background-size: 30px 30px;
+    }
+
+    /* --- ACCESSIBILITY --- */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+
+    /* --- RESPONSIVE --- */
+    @media (max-width: 768px) {
+      .floating-card { display: none; }
+      .hero { padding-top: 100px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__content">
+      <span class="hero__tag" data-reveal-child>Social Growth, Autopilot Mode</span>
+      <h1 class="hero__title" data-animate="chars">SOCIAL REACH AUTOMATED GROWTH</h1>
+      <p class="hero__subtitle" data-reveal-child>Stop guessing what works. Analyze trends and automate your content strategy for maximum engagement.</p>
+      <div class="hero__actions" data-reveal-child>
+        <a href="#cta" class="btn-primary">Explore Design</a>
+        <a href="#features" class="btn-outline">View Features</a>
+      </div>
+    </div>
+    <!-- Optional: add floating metric card here (Effect #5) -->
+  </section>
+
+  <!-- FEATURES (example section with scroll reveal) -->
+  <section class="section dot-grid" data-reveal>
+    <h2 class="section__title" data-reveal-child>Built for Results</h2>
+    <p data-reveal-child style="color: var(--color-text-muted); max-width: 600px; line-height: 1.6;">
+      Every detail engineered for conversion and engagement.
+    </p>
+  </section>
+
+  <!-- SCRIPTS -->
+  <!-- GSAP — check latest: cdnjs.com/libraries/gsap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/ScrollTrigger.min.js"></script>
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
+
+    // Effect #4: Character animation
+    document.querySelectorAll('[data-animate="chars"]').forEach(el => {
+      const text = el.textContent;
+      el.innerHTML = text.split('').map(c =>
+        c === ' ' ? '&nbsp;' :
+        `<span style="display:inline-block;opacity:0;transform:translateY(40px)">${c}</span>`
+      ).join('');
+      gsap.to(el.querySelectorAll('span'), {
+        opacity: 1, y: 0, duration: 0.6, stagger: 0.025,
+        ease: 'power3.out', delay: 0.3
+      });
+    });
+
+    // Effect #6: Scroll reveals
+    gsap.utils.toArray('[data-reveal]').forEach(section => {
+      const children = section.querySelectorAll('[data-reveal-child]');
+      gsap.from(children, {
+        y: 60, opacity: 0, duration: 0.8, stagger: 0.15,
+        ease: 'power2.out',
+        scrollTrigger: { trigger: section, start: 'top 80%', toggleActions: 'play none none none' }
+      });
+    });
+  </script>
+</body>
+</html>
