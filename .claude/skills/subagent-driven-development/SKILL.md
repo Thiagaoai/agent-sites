@@ -1,3 +1,8 @@
+---
+name: subagent-driven-development
+description: Routes tasks to the correct subagent (landing-page, copy, dashboard, crm, deploy, motion-3d). Use when a task is divisible across multiple specialties or covers more than one discipline.
+---
+
 # SKILL: subagent-driven-development | Priority: 8
 Source: AutomatEasy internal
 

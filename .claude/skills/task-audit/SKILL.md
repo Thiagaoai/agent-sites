@@ -1,5 +1,9 @@
-name: task-audit description: Standardized post-task audit — scores the execution from 0 to 10, maps errors by severity, and surfaces which skills were used, which were missed, which are missing from the agent, and which to invoke next to reach 10/10.
-SKILL: task-audit | Priority: 9
+---
+name: task-audit
+description: Standardized post-task audit — scores the execution from 0 to 10, maps errors by severity, and surfaces which skills were used, which were missed, which are missing from the agent, and which to invoke next to reach 10/10.
+---
+
+# SKILL: task-audit | Priority: 9
 Source: AutomatEasy mentorship standard
 
 IDENTITY

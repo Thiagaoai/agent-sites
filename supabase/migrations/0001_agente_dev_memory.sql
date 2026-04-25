@@ -1,6 +1,6 @@
 -- Memória persistente do Agente Dev
 -- Schema: agente_dev (per CLAUDE.md memory protocol)
--- Projeto Supabase: pbonwwcmdsirhzvmeunx
+-- Projeto Supabase: xhdcsryudsvzzyfhuabv (agente-sites @ DockplusAI)
 
 CREATE EXTENSION IF NOT EXISTS pgcrypto;
 CREATE SCHEMA IF NOT EXISTS agente_dev;

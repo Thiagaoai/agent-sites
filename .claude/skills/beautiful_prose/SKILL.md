@@ -1,3 +1,8 @@
+---
+name: beautiful-prose
+description: Hard-edge persuasive writing — forceful, direct, specific copy. Apply after humanizer to add strength to bottom-of-funnel copy, headlines, and sales emails.
+---
+
 # SKILL: beautiful_prose | Priority: 8
 Source: AutomatEasy internal
 

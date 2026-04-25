@@ -1,3 +1,8 @@
+---
+name: kaizen
+description: Continuous-improvement cycle for the agent — small evidence-based changes per session covering skills, subagents, processes, and CLAUDE.md. Use at session end, after detected errors, or during monthly review.
+---
+
 # SKILL: kaizen | Priority: 8
 Source: AutomatEasy internal
 

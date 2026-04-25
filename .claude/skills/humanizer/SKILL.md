@@ -1,3 +1,8 @@
+---
+name: humanizer
+description: Removes AI-generated evidence from any text before delivery to the user. Mandatory last step for all copy, scripts, captions, and emails in Brazilian Portuguese.
+---
+
 # SKILL: humanizer | Priority: 9
 Source: AutomatEasy internal
 

@@ -1,3 +1,8 @@
+---
+name: researcher
+description: Web research protocol for technology that may have changed recently. Prioritizes official docs over blogs and Stack Overflow. Use when about to state any claim that begins with "I think" about mutable technology.
+---
+
 # SKILL: researcher | Priority: 8
 Source: AutomatEasy internal
 

@@ -1,3 +1,8 @@
+---
+name: deep-search
+description: Structured web research protocol that retrieves, cross-references, and validates information from authoritative sources before any claim reaches the user. Use when verifying technical claims about platforms (Meta, Google, Supabase), API changes, benchmark values, or any post-2024 platform behavior.
+---
+
 # SKILL: deep-search | Priority: 1
 Source: AutomatEasy internal — built for AutomatEasy agent suite
 

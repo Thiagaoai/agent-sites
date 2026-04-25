@@ -1,3 +1,8 @@
+---
+name: customer-support
+description: Client-facing communication templates and escalation guides for agency-to-client emails, reports, deliveries, and presentations. Not for internal user-agent communication.
+---
+
 # SKILL: customer-support | Priority: 6
 Source: AutomatEasy internal
 

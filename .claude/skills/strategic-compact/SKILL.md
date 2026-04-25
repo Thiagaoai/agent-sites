@@ -1,3 +1,8 @@
+---
+name: strategic-compact
+description: Suggests running /compact when context exceeds 60% of the window, before a new project phase, or after a series of errors that signal context degradation.
+---
+
 # SKILL: strategic-compact | Priority: 8
 Source: AutomatEasy internal
 

@@ -1,3 +1,8 @@
+---
+name: self-healing
+description: Self-correction protocol when the agent detects an error or fails the reflexion check. Acknowledges the error, identifies the root cause, corrects the output, and logs the pattern to avoid repetition.
+---
+
 # SKILL: self-healing | Priority: 9
 Source: AutomatEasy internal
 

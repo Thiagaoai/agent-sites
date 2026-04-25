@@ -1,3 +1,8 @@
+---
+name: trigger-dev
+description: Trigger.dev for background jobs, retries, and scheduled tasks in Next.js/Node/Vercel/Supabase stacks. Use only when N8n is insufficient for the workflow.
+---
+
 # SKILL: trigger-dev | Priority: 7
 Source: AutomatEasy internal
 

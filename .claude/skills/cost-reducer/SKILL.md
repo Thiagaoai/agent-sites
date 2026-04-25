@@ -1,3 +1,8 @@
+---
+name: cost-reducer
+description: Token economy practices for long sessions. Use when context exceeds 50% of the window or for repetitive tasks. Avoids re-fetching data and re-stating already-defined code.
+---
+
 # SKILL: cost-reducer | Priority: 9
 Source: AutomatEasy internal
 
